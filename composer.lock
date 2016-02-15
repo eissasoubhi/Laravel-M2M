@@ -1,0 +1,347 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d91af0f0d0ab395e57dface15e89ed99",
+    "content-hash": "47fa50043f27036a6cfd574c30dd5891",
+    "packages": [
+        {
+            "name": "gossi/collection",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gossi/collection.git",
+                "reference": "339bda4e443645d0cd9165302ee23f44d4bdfa90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gossi/collection/zipball/339bda4e443645d0cd9165302ee23f44d4bdfa90",
+                "reference": "339bda4e443645d0cd9165302ee23f44d4bdfa90",
+                "shasum": ""
+            },
+            "require": {
+                "gossi/common": "~0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gossi\\collection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP Collections library",
+            "keywords": [
+                "collection",
+                "collections",
+                "list",
+                "map",
+                "queue",
+                "set",
+                "stack"
+            ],
+            "abandoned": "phootwork/collection",
+            "time": "2014-11-09 19:10:34"
+        },
+        {
+            "name": "gossi/common",
+            "version": "v0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gossi/common.git",
+                "reference": "88362cd8c06d0f5f7d02870f64105d3912d95044"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gossi/common/zipball/88362cd8c06d0f5f7d02870f64105d3912d95044",
+                "reference": "88362cd8c06d0f5f7d02870f64105d3912d95044",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gossi\\common\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Common php interfaces and classes",
+            "keywords": [
+                "commons",
+                "php"
+            ],
+            "abandoned": "phootwork/lang",
+            "time": "2014-11-06 01:24:21"
+        },
+        {
+            "name": "gossi/php-code-formatter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gossi/php-code-formatter.git",
+                "reference": "318c01ef82fe471bca62e636dbee86bb38a6e00e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gossi/php-code-formatter/zipball/318c01ef82fe471bca62e636dbee86bb38a6e00e",
+                "reference": "318c01ef82fe471bca62e636dbee86bb38a6e00e",
+                "shasum": ""
+            },
+            "require": {
+                "gossi/collection": "~1",
+                "php": ">=5.4",
+                "symfony/config": "~2",
+                "symfony/event-dispatcher": "~2",
+                "symfony/yaml": "~2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gossi\\formatter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "a code formatter for php code",
+            "keywords": [
+                "beautifier",
+                "formatter",
+                "php"
+            ],
+            "time": "2014-10-18 23:05:55"
+        },
+        {
+            "name": "symfony/config",
+            "version": "v2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/config.git",
+                "reference": "41ee6c70758f40fa1dbf90d019ae0a66c4a09e74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/config/zipball/41ee6c70758f40fa1dbf90d019ae0a66c4a09e74",
+                "reference": "41ee6c70758f40fa1dbf90d019ae0a66c4a09e74",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/filesystem": "~2.3|~3.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Config\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-01-03 15:33:41"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "ee278f7c851533e58ca307f66305ccb9188aceda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/ee278f7c851533e58ca307f66305ccb9188aceda",
+                "reference": "ee278f7c851533e58ca307f66305ccb9188aceda",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+                "symfony/dependency-injection": "~2.6|~3.0.0",
+                "symfony/expression-language": "~2.6|~3.0.0",
+                "symfony/stopwatch": "~2.3|~3.0.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-01-13 10:28:07"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "064ac12afd2ceb8a2c1bfb7bed8e931c6dd1997f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/064ac12afd2ceb8a2c1bfb7bed8e931c6dd1997f",
+                "reference": "064ac12afd2ceb8a2c1bfb7bed8e931c6dd1997f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-01-27 11:34:55"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "34c8a4b51e751e7ea869b8262f883d008a2b81b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/34c8a4b51e751e7ea869b8262f883d008a2b81b8",
+                "reference": "34c8a4b51e751e7ea869b8262f883d008a2b81b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-01-13 10:28:07"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "gossi/php-code-formatter": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

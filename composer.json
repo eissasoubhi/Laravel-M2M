@@ -1,0 +1,17 @@
+{
+    "keywords" : [
+        "Laravel",
+        "Migration",
+        "Mysql",
+        "Database",
+        "Schema",
+        "Laravel "
+    ],
+    "name" : "eissa/Laravel-M2M",
+    "type" : "project",
+    "description" : "Mysql To Laravel Migration Laravel",
+    "license" : "MIT",
+    "require": {
+        "gossi/php-code-formatter": "dev-master"
+    }
+}
