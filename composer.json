@@ -12,6 +12,7 @@
     "description" : "Mysql To Laravel Migration Laravel",
     "license" : "MIT",
     "require": {
-        "gossi/php-code-formatter": "dev-master"
+        "gossi/php-code-formatter": "dev-master",
+        "greenlion/php-sql-parser": "^4.0"
     }
 }
