@@ -2,11 +2,13 @@
 /**
 * deals with mysql database schema
 */
+use PHPSQLParser\PHPSQLParser;
+
 class MysqlSchemaParser
 {
     protected $mysql_schema;
     protected $parser;
-    function __construct($mysql_schema = null)
+    function __construct($mysql_schema)
     {
         $this->setSchema($mysql_schema);
         $this->parser  = new PHPSQLParser($mysql_schema) ;
@@ -21,7 +23,9 @@ class MysqlSchemaParser
     {
         if ($this->hasSchema())
         {
-
+            ini_set('xdebug.var_display_max_depth', 10);
+            var_dump($this->parser);
+            exit();
         }
         else
         {

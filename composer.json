@@ -14,5 +14,10 @@
     "require": {
         "gossi/php-code-formatter": "dev-master",
         "greenlion/php-sql-parser": "^4.0"
+    },
+    "autoload": {
+        "classmap": [
+            "classes/"
+        ]
     }
 }
