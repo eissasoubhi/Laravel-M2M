@@ -13,7 +13,7 @@ $mysql = "CREATE TABLE `logs` (
 COLLATE='utf8_general_ci'
 ENGINE=MyISAM
 ;
-CREATE TABLE `langs` (
+create table `langs` (
     `id` TINYINT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
     `label` VARCHAR(32) NOT NULL,
     `locale` VARCHAR(20) NOT NULL,
@@ -22,8 +22,14 @@ CREATE TABLE `langs` (
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
-AUTO_INCREMENT=4
+AUTO_INCREMENT=4;classes;
+SELECT * FROM logs WHERE id = 1;
 ";
+
+// $mysql_array =preg_split("/(CREATE +(?:TEMPORARY +)?TABLE +(?:IF +NOT +EXISTS)?)/is", $mysql, null ,PREG_SPLIT_DELIM_CAPTURE);
+// $mysql_array = explode('CREATE TABLE', $mysql);
+// var_dump($mysql_array);
+// exit();
 /*echo "<pre>";
 print_r(get_declared_classes());
 echo "</pre>";*/
