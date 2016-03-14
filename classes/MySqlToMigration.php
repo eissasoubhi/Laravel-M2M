@@ -14,7 +14,7 @@ class MySqlToMigration
     {
         $this->code_formater = New Formatter();
         $this->schema_parser = New MysqlSchemaParser($mysql_schema);
-        $this->create_table_schemas = $this->getCreateSchemas($mysql_schema);
+        $this->create_table_schemas = $this->getParsedCreateSchemas($mysql_schema);
         $this->tables = $this->getTables($this->create_table_schemas);
     }
 
@@ -51,16 +51,18 @@ class MySqlToMigration
         return $generated_migration_files;
     }
 
-    private function getCreateSchemas($mysql_schema)
+    private function getParsedCreateSchemas($mysql_schema)
     {
-        return $this->schema_parser->getCreateTableSchemas();
+        return $this->schema_parser->getParsedCreateSchemas();
     }
 
     private function getTables($create_table_schemas)
     {
-        foreach ($create_table_schemas as $create_schema)
+        ini_set('xdebug.var_display_max_depth', 10);
+        foreach ($create_table_schemas as $parsed_create_schema)
         {
-            $this->tables[] = New Table($create_schema);
+            var_dump($parsed_create_schema);
+            // $this->tables[] = New Table($parsed_create_schema);
         }
     }
 }

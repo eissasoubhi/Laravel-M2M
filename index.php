@@ -1,7 +1,27 @@
 <?php
 require_once 'vendor/autoload.php';
 
-$mysql = "CREATE TABLE `logs` (
+$mysql = "CREATE TABLE `zbo_visits` (
+    `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `cms_id` INT(10) UNSIGNED NULL DEFAULT NULL,
+    `user_id` INT(10) UNSIGNED NULL DEFAULT NULL,
+    `http_url` TEXT NOT NULL COLLATE 'utf8_unicode_ci',
+    `http_method` VARCHAR(255) NOT NULL COLLATE 'utf8_unicode_ci',
+    `http_path` VARCHAR(255) NOT NULL COLLATE 'utf8_unicode_ci',
+    `ip` VARCHAR(255) NOT NULL COLLATE 'utf8_unicode_ci',
+    `created_at` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+    `updated_at` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+    PRIMARY KEY (`id`),
+    INDEX `zbo_visits_cms_id_foreign` (`cms_id`),
+    INDEX `zbo_visits_user_id_foreign` (`user_id`),
+    CONSTRAINT `zbo_visits_cms_id_foreign` FOREIGN KEY (`cms_id`) REFERENCES `cms_lang` (`id_cms_lang`) ON DELETE CASCADE,
+    CONSTRAINT `zbo_visits_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `zbo_users` (`id`) ON DELETE CASCADE
+)
+COLLATE='utf8_unicode_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=117
+;
+CREATE TABLE `logs` (
     `ts` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `evt` MEDIUMINT(16) UNSIGNED NOT NULL,
     `err` MEDIUMINT(16) UNSIGNED NULL DEFAULT '0',
