@@ -62,7 +62,8 @@ class MySqlToMigration
         foreach ($create_table_schemas as $parsed_create_schema)
         {
             var_dump($parsed_create_schema);
-            // $this->tables[] = New Table($parsed_create_schema);
+            exit();
+            $this->tables[] = New Table($parsed_create_schema);
         }
     }
 }
